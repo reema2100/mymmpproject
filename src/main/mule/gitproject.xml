@@ -18,5 +18,13 @@ output application/json
 "payload"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="8e0567b0-015a-480e-a1b9-63a00d5cafc3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+"overriden payload"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 </mule>
